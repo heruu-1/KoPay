@@ -26,7 +26,7 @@
         }
 
         .horizontal-navbar h1 {
-            color : rgb(202, 160, 123)
+            color: rgb(202, 160, 123);
         }
 
         .horizontal-navbar ul {
@@ -43,13 +43,12 @@
         .horizontal-navbar ul li a {
             text-decoration: none;
             padding: 10px 15px;
+            color: rgba(255, 255, 255, 0.5);
         }
 
-        .horizontal-navbar ul li a.dashboard {
-            color: #ffffff;
-        }
-
-        .horizontal-navbar ul li a.services,
+        .horizontal-navbar ul li a.dashboard,
+        .horizontal-navbar ul li a.home,
+        .horizontal-navbar ul li a.shop,
         .horizontal-navbar ul li a.about,
         .horizontal-navbar ul li a.contact {
             color: rgba(255, 255, 255, 0.5);
@@ -58,6 +57,11 @@
         .horizontal-navbar ul li a:hover {
             background-color: #575757;
             color: #ffffff;
+        }
+
+        .horizontal-navbar ul li a:visited,
+        .horizontal-navbar ul li a:active {
+            color: rgba(255, 255, 255, 0.5);
         }
 
         .main-content {
@@ -73,7 +77,36 @@
             justify-content: center;
             align-items: flex-start;
             margin-top: 2%;
-            gap: 30%;
+            gap: 5%;
+        }
+
+        .deskripsi {
+            color: #ffffff;
+            width: 45%;
+            padding: 10px;
+            margin-left: 5%;
+        }
+
+        .deskripsi h1{
+            text-align: center;
+        }
+
+        .deskripsi p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .pic {
+            width: 55%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 5%;
+        }
+
+        .pic img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -84,11 +117,11 @@
             <?php
             $menuItems = [
                 'Home' => '#Home',
-                'Services' => '#services',
+                'Shop' => '#shop',
                 'About' => '#about',
                 'Contact' => '#contact'
             ];
-            $classes = ['dashboard', 'services', 'about', 'contact'];
+            $classes = ['home', 'shop', 'about', 'contact'];
             $index = 0;
             foreach ($menuItems as $name => $link): ?>
                 <li><a href="<?php echo $link; ?>" class="<?php echo $classes[$index]; ?>">
@@ -101,13 +134,11 @@
         <div class="content">
             <div class="deskripsi">
                 <h1>KoPay</h1>
-                <p></p>
+                <p>KoPay adalah sebuah situs web yang ditujukan untuk penikmat kopi yang ingin membeli biji kopi berkualitas. Situs ini menyediakan berbagai jenis biji kopi dari berbagai daerah penghasil kopi terkenal. Pengguna dapat menjelajahi katalog biji kopi berdasarkan asal, jenis, dan profil rasa. KoPay bertujuan untuk menjadi destinasi utama bagi para pencinta kopi yang mencari biji kopi premium.</p>
             </div>
-            <div class="reserved">
-                <h2>Reserved</h2>
-                <h3>10</h3>
+            <div class="pic">
+                <img src="https://res.cloudinary.com/dk0z4ums3/image/upload/v1594099345/attached_image/ini-manfaat-konsumsi-kopi-hitam-dan-efek-sampingnya-untuk-kesehatan.jpg" alt="Descriptive Alt Text">
             </div>
-        </div>
         </div>
     </div>
 </body>
