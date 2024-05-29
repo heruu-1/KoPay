@@ -17,7 +17,7 @@
         <ul>
             <?php
             $menuItems = [
-                'Home' => '#Home',
+                'Home' => 'home.php',
                 'Shop' => '#shop',
                 'About' => '#about',
                 'Contact' => '#contact'

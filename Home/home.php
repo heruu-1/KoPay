@@ -21,7 +21,7 @@
             $menuItems = [
                 'Home' => '#Home',
                 'Shop' => '#shop',
-                'About' => '#about',
+                'About' => 'about.php',
                 'Contact' => '#contact'
             ];
             $classes = ['home', 'shop', 'about', 'contact'];
