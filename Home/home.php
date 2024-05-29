@@ -95,6 +95,32 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
+        .deskripsi .buttons {
+            display: flex;
+            gap: 10%;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .deskripsi .buttons button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .deskripsi .buttons .get-started {
+            background-color: rgb(202, 160, 123);
+            color: #ffffff;
+        }
+
+        .deskripsi .buttons .about-us {
+            background-color: transparent;
+            color: #ffffff;
+            border: 2px solid rgb(202, 160, 123);
+        }
+
         .pic {
             width: 55%;
             display: flex;
@@ -135,6 +161,12 @@
             <div class="deskripsi">
                 <h1>KoPay</h1>
                 <p>KoPay adalah sebuah situs web yang ditujukan untuk penikmat kopi yang ingin membeli biji kopi berkualitas. Situs ini menyediakan berbagai jenis biji kopi dari berbagai daerah penghasil kopi terkenal. Pengguna dapat menjelajahi katalog biji kopi berdasarkan asal, jenis, dan profil rasa. KoPay bertujuan untuk menjadi destinasi utama bagi para pencinta kopi yang mencari biji kopi premium.</p>
+                <br>
+                <div class="buttons">
+                <button class="get-started">Get Started</button>
+                <button class="about-us">About Us</button>
+                </div>
+                
             </div>
             <div class="pic">
                 <img src="https://res.cloudinary.com/dk0z4ums3/image/upload/v1594099345/attached_image/ini-manfaat-konsumsi-kopi-hitam-dan-efek-sampingnya-untuk-kesehatan.jpg" alt="Descriptive Alt Text">
