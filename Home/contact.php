@@ -20,7 +20,7 @@
                 'Home' => 'home.php',
                 'Shop' => '#shop',
                 'About' => 'about.php',
-                'Contact' => '#contact'
+                'Contact' => 'contact.php'
             ];
             $classes = ['home', 'shop', 'about', 'contact'];
             $index = 0;
@@ -41,7 +41,7 @@
 
     <div class="row">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.3252985659215!2d105.2423795748222!3d-5.367255794611546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40c535ab10e3fb%3A0xe54e447a49d9e70a!2sGedung%20Ilmu%20Komputer%20Universitas%20Lampung%20(GIK%20Unila)!5e0!3m2!1sid!2sid!4v1716949811198!5m2!1sid!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d436.53170545244853!2d105.25054431002341!3d-5.363255809031886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1716957436238!5m2!1sid!2sid"
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </body>
