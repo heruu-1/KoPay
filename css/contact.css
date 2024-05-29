@@ -59,17 +59,17 @@ body {
 
 #contact-container {
   display: flex;
-  align-items: center;
+  margin-top: 2rem;
   justify-content: space-around;
-  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.row {
-  background-color: #c12424;
-  width: 2500px;
-  margin-top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
+#map {
+  min-height: 50vh;
+  min-width: 80vh;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .judul {
@@ -84,4 +84,8 @@ body {
   font-weight: 300;
   color: #ffffff;
   text-align: center;
+}
+
+#icon {
+  stroke: #ffffff;
 }
