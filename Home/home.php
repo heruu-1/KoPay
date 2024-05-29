@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="home.css">
 </head>
+
 <body>
     <nav class="horizontal-navbar">
         <h1>KoPay</h1>
@@ -42,8 +43,8 @@
                     KoPay bertujuan untuk menjadi destinasi utama bagi para pencinta kopi yang mencari biji kopi
                     premium.</p>
                 <div class="buttons">
-                <button class="get-started">Get Started</button>
-                <button class="about-us">About Us</button>
+                    <button class="get-started">Get Started</button>
+                    <button class="about-us"><a id="a" href="about.php">About Us</a></button>
                 </div>
             </div>
             <div class="pic">
