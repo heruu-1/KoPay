@@ -39,10 +39,18 @@
         Nobis.
     </p>
 
+    <div id="contact-container">
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d436.53170545244853!2d105.25054431002341!3d-5.363255809031886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1716957436238!5m2!1sid!2sid"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        </div>
+        <div>
+            kanan
+        </div>
+    </div>
+
     <div class="row">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d436.53170545244853!2d105.25054431002341!3d-5.363255809031886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1716957436238!5m2!1sid!2sid"
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </body>
 
