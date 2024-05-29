@@ -20,7 +20,7 @@
                 'Home' => 'home.php',
                 'Shop' => '#shop',
                 'About' => '#about',
-                'Contact' => '#contact'
+                'Contact' => 'contact.php'
             ];
             $classes = ['home', 'shop', 'about', 'contact'];
             $index = 0;

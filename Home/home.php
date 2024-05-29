@@ -22,7 +22,7 @@
                 'Home' => '#Home',
                 'Shop' => '#shop',
                 'About' => 'about.php',
-                'Contact' => '#contact'
+                'Contact' => 'contact.php'
             ];
             $classes = ['home', 'shop', 'about', 'contact'];
             $index = 0;
