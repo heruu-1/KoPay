@@ -33,7 +33,7 @@
         </ul>
     </nav>
 
-    <h2 class="judul">Contact Me</h2>
+    <h2 id="judul">Contact Me</h2>
     <p class="p">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium corrupti facere error nisi repellendus
         iure laudantium est voluptatem ipsa, earum omnis cupiditate ducimus, sed sunt adipisci eligendi rerum neque.
@@ -49,22 +49,22 @@
         <div class="row">
             <form action="">
 
-                <div class="input-group">
+                <div id="input-group">
                     <i data-feather="user" id="icon"></i>
-                    <input type="text" placeholder="Nama">
+                    <input type="text" id="text" placeholder="Nama">
                 </div>
 
 
-                <div class="input-group">
+                <div id="input-group">
                     <i data-feather="mail" id="icon"></i>
-                    <input type="text" placeholder="Email">
+                    <input type="text" id="text" placeholder="Email">
                 </div>
 
-                <div class="input-group">
+                <div id="input-group">
                     <i data-feather="phone" id="icon"></i>
-                    <input type="text" placeholder="No HP">
+                    <input type="text" id="text" placeholder="No HP">
                 </div>
-                <button type="submit">Kirim Pesan</button>
+                <button type="submit" id="button">Kirim Pesan</button>
 
             </form>
         </div>
