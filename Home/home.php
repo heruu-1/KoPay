@@ -11,8 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="home.css">
-
-
+</head>
 <body>
     <nav class="horizontal-navbar">
         <h1>KoPay</h1>
@@ -42,6 +41,10 @@
                     terkenal. Pengguna dapat menjelajahi katalog biji kopi berdasarkan asal, jenis, dan profil rasa.
                     KoPay bertujuan untuk menjadi destinasi utama bagi para pencinta kopi yang mencari biji kopi
                     premium.</p>
+                <div class="buttons">
+                <button class="get-started">Get Started</button>
+                <button class="about-us">About Us</button>
+                </div>
             </div>
             <div class="pic">
                 <img src="https://res.cloudinary.com/dk0z4ums3/image/upload/v1594099345/attached_image/ini-manfaat-konsumsi-kopi-hitam-dan-efek-sampingnya-untuk-kesehatan.jpg"
