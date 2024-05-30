@@ -8,6 +8,13 @@ body {
   height: 100vh;
 }
 
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
 .horizontal-navbar {
   width: 100%;
   display: flex;

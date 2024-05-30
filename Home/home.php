@@ -15,7 +15,7 @@
 
 <body>
     <nav class="horizontal-navbar">
-        <h1>KoPay</h1>
+        <a href="home.php" class="logo">KoPay</a>
         <ul>
             <?php
             $menuItems = [
