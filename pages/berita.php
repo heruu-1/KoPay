@@ -47,14 +47,32 @@
                     <div class="resume-widget">
                         <div class="resume-item wow fadeInLeft" data-wow-delay=".4s">
                             <div class="time">
-                                04/06/2024
+                                20/02/2023
                             </div>
-                            <h3 class="resume-title">KoPay Mendapat Penghargaan</h3>
+                            <h3 class="resume-title">Grand Opening KoPay</h3>
                             <div class="isi-berita">
                                 <div class="berita-img">
-                                    <img src="../assets/img/berita/berita1.jpg" alt="" style="height: 180px;width: 280px;border-radius: 10px;">
+                                    <img src="../assets/img/berita/KoPay.jpg" alt="" style="height: 180px;width: 280px;border-radius: 10px;">
                                 </div>
-                                <p>KoPay mendapat Penghargaan di Indonesia Coffee Awards dengan voting "Best Seller"</p>
+                                <p>KoPay baru saja terjun ke dalam bisnis penjualan kopi.</p>
+                                <a href="#">>>> Baca Lebih Lanjut</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-6">
+                    <div class="resume-widget">
+                        <div class="resume-item wow fadeInLeft" data-wow-delay=".4s">
+                            <div class="time">
+                                12/05/2023
+                            </div>
+                            <h3 class="resume-title">Promo Dari KoPay</h3>
+                            <div class="isi-berita">
+                                <div class="berita-img">
+                                    <img src="../assets/img/berita/Kopay Promo Merge.jpg" alt="" style="height: 180px;width: 280px;border-radius: 10px;">
+                                </div>
+                                <p>KoPay memberikan beberapa promo untuk menarik para pelanggan baru</p>
                                 <a href="#">>>> Baca Lebih Lanjut</a>
                             </div>
                         </div>
@@ -72,7 +90,7 @@
                                 <div class="berita-img">
                                     <img src="../assets/img/berita/berita1.jpg" alt="" style="height: 180px;width: 280px;border-radius: 10px;">
                                 </div>
-                                <p>KoPay mendapat Penghargaan di Indonesia Coffee Awards dengan voting "Best Seller"</p>
+                                <p>KoPay baru saja terjun ke dalam bisnis penjualan kopi. Kabarnya KoPay</p>
                                 <a href="#">>>> Baca Lebih Lanjut</a>
                             </div>
                         </div>
@@ -90,25 +108,7 @@
                                 <div class="berita-img">
                                     <img src="../assets/img/berita/berita1.jpg" alt="" style="height: 180px;width: 280px;border-radius: 10px;">
                                 </div>
-                                <p>KoPay mendapat Penghargaan di Indonesia Coffee Awards dengan voting "Best Seller"</p>
-                                <a href="#">>>> Baca Lebih Lanjut</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col-md-6">
-                    <div class="resume-widget">
-                        <div class="resume-item wow fadeInLeft" data-wow-delay=".4s">
-                            <div class="time">
-                                04/06/2024
-                            </div>
-                            <h3 class="resume-title">KoPay Mendapat Penghargaan</h3>
-                            <div class="isi-berita">
-                                <div class="berita-img">
-                                    <img src="../assets/img/berita/berita1.jpg" alt="" style="height: 180px;width: 280px;border-radius: 10px;">
-                                </div>
-                                <p>KoPay mendapat Penghargaan di Indonesia Coffee Awards dengan voting "Best Seller"</p>
+                                <p>KoPay baru saja terjun ke dalam bisnis penjualan kopi. Kabarnya KoPay</p>
                                 <a href="#">>>> Baca Lebih Lanjut</a>
                             </div>
                         </div>
