@@ -60,7 +60,7 @@ function isActive($page) {
                 <div class="col-12 d-flex flex-wrap align-items-center">
 
                     <div class="logo-box">
-                        <a href="index.html">
+                        <a href="index.php">
                             <img src="assets/img/logo/kopay-logo.png" alt="">
                         </a>
                     </div>
