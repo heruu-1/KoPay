@@ -72,14 +72,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("sssss", $name, $email, $phone, $address, $message);
 
-    if ($stmt->execute()) {
-    } else {
-    }
-
-    $stmt->close();
-    $conn->close();
-} else {
 }
+$conn->close();
 ?>
 
     <?php include 'navbar.php'; ?>

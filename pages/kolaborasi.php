@@ -59,7 +59,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ssss", $fullName, $email, $phoneNumber, $message);
 
 }
-
 $conn->close();
 ?>
 
