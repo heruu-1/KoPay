@@ -223,6 +223,24 @@
                             </div>  Mulai menawarkan layanan berlangganan kopi bulanan dengan respon yang positif dari pelanggan.
                             </li>
                         </ul>
+                        <h3 class="resume-title">2024</h3>
+                        <ul>
+                            <li>
+                            <div class="time">
+                                <strong>Februari</strong>
+                            </div> Penambahan berbagai macam biji kopi
+                            </li>
+                            <li>
+                            <div class="time">
+                                <strong>Maret</strong>
+                            </div> Menambah koleksi biji kopi Arabica dan Robusta ke dalam katalog produk.
+                            </li>
+                            <li>
+                            <div class="time">
+                                <strong>Juni</strong>
+                            </div> Mengadakan promosi besar-besaran di media sosial untuk meningkatkan penjualan.
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

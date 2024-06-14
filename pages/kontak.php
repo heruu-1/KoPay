@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berita</title>
+    <title>Kontak</title>
 
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -51,8 +51,8 @@
                                     <p>Apabila Anda mempunyai pertanyaan atau masalah, Anda dapat menghubungi kami dengan mengisi formulir kontak, menelepon kami, 
                                         datang ke kantor kami, menemukan kami di media sosial lain, atau Anda dapat mengirim email pribadi ke:</p><br>
                                     <i data-feather="phone-call" class="mr-3"></i><strong>+62 87822091974</strong><br><br>
-                                    <i data-feather="mail" class="mr-3"></i><strong>email@example.com</strong><br><br>
-                                    <i data-feather="map-pin" class="mr-3"></i><strong>Alamat Kantor</strong>
+                                    <i data-feather="mail" class="mr-3"></i><strong>robbyhdayatt@gmail.com</strong><br><br>
+                                    <i data-feather="map-pin" class="mr-3"></i><strong>Rumah Gibe</strong>
                                 </div>
                             </div>
                         </div>

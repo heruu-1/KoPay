@@ -18,7 +18,7 @@ function isActive($page) {
                     <div class="row">
                         <div class="col-md-6">
                             <div class="logo-box d-flex align-items-center">
-                                <a href="index.html" class="d-flex align-items-center text-decoration-none">
+                                <a href="../index.php" class="d-flex align-items-center text-decoration-none">
                                     <img src="../assets/img/logo/kopay-logo.png" alt="" class="logo-image">
                                     <strong class="kopay-text ml-1" style="text-decoration: none; color: aliceblue;">KoPay</strong>
                                 </a>
@@ -60,7 +60,7 @@ function isActive($page) {
                 <div class="col-12 d-flex flex-wrap align-items-center">
 
                     <div class="logo-box">
-                        <a href="index.html">
+                        <a href="index.php">
                             <img src="assets/img/logo/kopay-logo.png" alt="">
                         </a>
                     </div>
