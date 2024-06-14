@@ -37,7 +37,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "kolaborasi_db";
+$dbname = "kopay_db";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -47,6 +47,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+<<<<<<< HEAD
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fullName = $_POST['full_name'];
@@ -59,6 +60,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ssss", $fullName, $email, $phoneNumber, $message);
 
 }
+=======
+>>>>>>> bdebe166e85aaefd60af9c780b9c134debe95886
 $conn->close();
 ?>
 
@@ -135,7 +138,7 @@ $conn->close();
                                 <p class=" wow fadeInUp" data-wow-delay=".4s">Tim kami tidak sabar menunggu kabar dari anda!</p>
                             </div>
 
-                            <form action="kolaborasi.php" method="post">
+                            <form action="post_kolaborasi.php" method="post">
                                 <div class="form-group">
                                     <label for="exampleFormControlInput1">Nama Lengkap</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1" name="full_name" placeholder="Masukkan Nama Anda" required>

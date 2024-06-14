@@ -39,7 +39,7 @@ function isActive($page) {
                     </div>
 
                     <div class="header-button">
-                        <a href="belanja.php" class="btn tj-btn-primary">Belanja</a>
+                        <a href="belanja/index.php" class="btn tj-btn-primary">Belanja</a>
                     </div>
 
                     <div class="menu-bar d-lg-none">
@@ -83,7 +83,7 @@ function isActive($page) {
                         </nav>
                     </div>
                     <div class="header-button">
-                        <a href="belanja.php" class="btn tj-btn-primary">Belanja</a>
+                        <a href="belanja/index.php" class="btn tj-btn-primary">Belanja</a>
                     </div>
 
                     <div class="menu-bar d-lg-none">

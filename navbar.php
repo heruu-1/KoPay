@@ -27,7 +27,7 @@
                     </div>
 
                     <div class="header-button">
-                        <a href="belanja.php" class="btn tj-btn-primary">Belanja</a>
+                        <a href="pages/belanja/index.php" class="btn tj-btn-primary">Belanja</a>
                     </div>
 
                     <div class="menu-bar d-lg-none">
@@ -71,7 +71,7 @@
                         </nav>
                     </div>
                     <div class="header-button">
-                        <a href="belanja.php" class="btn tj-btn-primary">Belanja</a>
+                        <a href="pages/belanja/index.php" class="btn tj-btn-primary">Belanja</a>
                     </div>
 
                     <div class="menu-bar d-lg-none">
