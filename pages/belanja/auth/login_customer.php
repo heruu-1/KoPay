@@ -1,3 +1,10 @@
+<?php 
+  include 'cek_login_customer.php';
+  if (isset($_SESSION["id_customer"])) {
+    header("location:../index.php");
+  }
+  ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>

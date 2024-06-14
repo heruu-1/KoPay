@@ -1,26 +1,8 @@
 <?php
- session_start();
-
- // Set timeout session
- $session_timeout = 1800; // 1800 detik = 30 menit
- 
- // Cek apakah sesi telah diset
- if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity'] > $session_timeout)) {
-     // Jika melewati batas waktu, hapus semua data sesi dan redirect ke halaman login
-     session_unset();     // unset $_SESSION variable for the run-time
-     session_destroy();   // destroy session data in storage
-     header("Location: auth/login_admin.php");
-     exit();  // Pastikan untuk keluar dari script setelah redirect
- }
- 
- // Update waktu terakhir aktivitas pengguna
- $_SESSION['last_activity'] = time();
- 
- // Cek apakah pengguna telah login
- if (!isset($_SESSION["id_admin"])) {
-     header("Location: auth/login_admin.php");
-     exit();  // Pastikan untuk keluar dari script setelah redirect
- }
+  session_start();
+  if (!isset($_SESSION["id_admin"])) {
+    header("location:auth/login_admin.php");
+  }
 
   include("config.php");
   include("counter/counter.php");
@@ -52,7 +34,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>KoPay Store</title>
+    <title>Toko Buku</title>
     <!-- css-bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- js-bootstrap -->
@@ -121,7 +103,7 @@
           <div class="row d-flex justify-content-center">
               <p class="mr-3">Admin: <?php echo $total_admin; ?> </p>
               <p class="mr-3">Customer: <?php echo $total_customer; ?></p>
-              <p>Buku: <?php echo $total_buku; ?></p>
+              <p>Biji Kopi: <?php echo $total_buku; ?></p>
           </div>
               
         </div>

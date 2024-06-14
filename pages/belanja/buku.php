@@ -1,11 +1,5 @@
 <?php
   session_start();
-  if (!isset($_SESSION["id_admin"])) {
-    header("location:aut/login_admin.php");
-  }
-
-  // mengambil file config.php
-  // agar tidak perlu membuat koneksi baru
   include("config.php");
  ?>
 <!DOCTYPE html>
@@ -28,7 +22,7 @@
         document.getElementById('tahun').value = "";
         document.getElementById('harga').value = "";
         document.getElementById('stok').value = "";
-        // document.getElementById('image').value = "";
+        document.getElementById('image').value = "";
       }
       Edit = (item) =>{
         document.getElementById('action').value = "update";
@@ -37,7 +31,7 @@
         document.getElementById('tahun').value = item.tahun;
         document.getElementById('harga').value = item.harga;
         document.getElementById('stok').value = item.stok;
-        // document.getElementById('image').value = item.image;
+        document.getElementById('image').value = item.image;
       }
     </script>
   </head>

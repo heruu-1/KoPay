@@ -1,3 +1,10 @@
+
+<?php 
+  include 'cek_login_admin.php';
+  if (isset($_SESSION["id_admin"])) {
+    header("location:../admin.php");
+  }
+  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>

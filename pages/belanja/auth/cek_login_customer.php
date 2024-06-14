@@ -1,37 +1,46 @@
 <?php
-  session_start();
+session_start(); // Start the session
 
-  include("../config.php");
+include("../config.php"); // Include database connection
 
-  $username = $_POST["username"];
-  $password = $_POST["password"];
+// Check if login form is submitted
+if (isset($_POST["login_customer"])) {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
 
-  if (isset($_POST["login_customer"])) {
-    $sql = "select * from customer
-            where username = '$username'
-            and password = '$password'";
-    $query = mysqli_query($connect, $sql);
-    $jumlah = mysqli_num_rows($query);
+    // Query to check username and password in customer table
+    $sql = "SELECT * FROM customer WHERE username='$username' AND password='$password'";
+    $result = mysqli_query($connect, $sql);
 
-    if ($jumlah > 0) {
+    // Check if query returns any rows
+    if (mysqli_num_rows($result) > 0) {
+        // Login successful
+        $customer = mysqli_fetch_assoc($result);
 
-      $customer = mysqli_fetch_array($query);
+        // Set session variables
+        $_SESSION["id_customer"] = $customer["id_customer"];
+        $_SESSION["nama"] = $customer["nama"];
 
-      $_SESSION["id_customer"] = $customer["id_customer"];
-      $_SESSION["nama"] = $customer["nama"];
+        // Initialize an empty cart array (if needed)
+        $_SESSION["cart"] = array();
 
-      $_SESSION["cart"] = array();
-
-      header("location:../index.php");
-    } else{
-
-      header("location:login_customer.php");
+        // Redirect to homepage or any other authorized page
+        header("location: ../index.php");
+        exit(); // Ensure that script stops here
+    } else {
+        // Login failed
+        echo "<script>alert('Username atau password salah'); window.location.href='login_customer.php';</script>";
+        exit(); // Ensure that script stops here
     }
-  }
+}
 
-  if (isset($_GET["logout"])) {
-    session_destroy(); 
+// Check if logout request is received
+if (isset($_GET["logout"])) {
+    // Destroy all session data
+    session_destroy();
 
-    header("location:login_customer.php"); // Redirect
-  }
- ?>
+    // Redirect to login page after logout
+    header("location: login_customer.php");
+    exit(); // Ensure that script stops here
+}
+?>

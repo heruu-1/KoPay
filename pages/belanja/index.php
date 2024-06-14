@@ -196,7 +196,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Profile</a>
                 <a class="dropdown-item" href="#">Setting</a>
-                <a class="dropdown-item bg-dark text-light" href="process_login_customer.php?logout=true">Logout</a>
+                <a class="dropdown-item bg-dark text-light" href="logout.php">Logout</a>
               </div>
             </li>
           </ul>
