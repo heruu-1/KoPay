@@ -71,6 +71,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO contacts (name, email, phone, address, message) VALUES (?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("sssss", $name, $email, $phone, $address, $message);
+
+    if ($stmt->execute()) {
+    } else {
+    }
+
+    $stmt->close();
+    $conn->close();
+} else {
 }
 ?>
 
