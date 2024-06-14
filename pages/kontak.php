@@ -48,7 +48,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "contact_form_db";
+$dbname = "kopay_db";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
