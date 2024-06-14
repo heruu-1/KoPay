@@ -47,7 +47,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-<<<<<<< HEAD
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fullName = $_POST['full_name'];
@@ -60,8 +59,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ssss", $fullName, $email, $phoneNumber, $message);
 
 }
-=======
->>>>>>> bdebe166e85aaefd60af9c780b9c134debe95886
 $conn->close();
 ?>
 

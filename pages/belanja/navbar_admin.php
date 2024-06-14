@@ -22,7 +22,7 @@
                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                  <a class="dropdown-item" href="#">Profile</a>
                  <a class="dropdown-item" href="#">Setting</a>
-                 <a class="dropdown-item bg-dark text-light" href="process_login_admin.php?logout=true">Logout</a>
+                 <a class="dropdown-item bg-dark text-light" href="auth/cek_login_admin.php?logout=true">Logout</a>
                </div>
              </li>
            </ul>

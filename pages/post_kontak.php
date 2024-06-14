@@ -16,19 +16,20 @@ if ($conn->connect_error) {
 // Memproses data dari formulir jika ada request POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Mengambil nilai dari formulir
-    $full_name = $_POST['full_name'];
+    $name = $_POST['name'];
     $email = $_POST['email'];
-    $phone_number = $_POST['phone_number'];
+    $phone = $_POST['phone'];
+    $address = $_POST['address'];
     $message = $_POST['message'];
 
     // SQL untuk menyimpan data ke dalam tabel kolaborasi
-    $sql = "INSERT INTO submissions (full_name, email, phone_number, message)
-            VALUES ('$full_name', '$email', '$phone_number', '$message')";
+    $sql = "INSERT INTO contacts (name, email, phone,address, message)
+            VALUES ('$name', '$email', '$phone','$address', '$message')";
 
     
     if ($conn->query($sql) === TRUE) {
         // Jika data berhasil disimpan, redirect ke halaman sukses atau lainnya
-        header('Location: kolaborasi.php');
+        header('Location: kontak.php');
         exit; // Pastikan untuk keluar dari script setelah redirect
     } else {
         // Jika terjadi kesalahan dalam penyimpanan data

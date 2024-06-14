@@ -51,7 +51,7 @@ if (isset($_POST["save_admin"])) {
   }
 
   // Redirect ke halaman admin setelah menyimpan
-  header("location:../admin.php");
+  header("location:/admin.php");
 }
 
 // Cek apakah ada permintaan untuk menghapus admin
@@ -61,6 +61,6 @@ if (isset($_GET["hapus"])) {
   mysqli_query($connect, $sql);
 
   // Redirect ke halaman admin setelah menghapus
-  header("location:../admin.php");
+  header("location:/admin.php");
 }
 ?>
