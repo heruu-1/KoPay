@@ -32,6 +32,38 @@
 
 </head>
 <body>
+
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "kolaborasi_db";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $fullName = $_POST['full_name'];
+    $email = $_POST['email'];
+    $phoneNumber = $_POST['phone_number'];
+    $message = $_POST['message'];
+
+    $sql = "INSERT INTO submissions (full_name, email, phone_number, message) VALUES (?, ?, ?, ?)";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ssss", $fullName, $email, $phoneNumber, $message);
+
+}
+
+$conn->close();
+?>
+
+
 <?php include 'navbar.php'; ?>
     
     <main class="site-content">
@@ -104,25 +136,25 @@
                                 <p class=" wow fadeInUp" data-wow-delay=".4s">Tim kami tidak sabar menunggu kabar dari anda!</p>
                             </div>
 
-                            <form>
+                            <form action="kolaborasi.php" method="post">
                                 <div class="form-group">
-                                  <label for="exampleFormControlInput1">Nama Lengkap</label>
-                                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Masukkan Nama Anda">
+                                    <label for="exampleFormControlInput1">Nama Lengkap</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" name="full_name" placeholder="Masukkan Nama Anda" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleFormControlInput1">Alamat Email</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nama@example.com">
-                                  </div>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="nama@example.com" required>
+                                </div>
                                 <div class="form-group">
                                     <label for="exampleFormControlInput1">No. Telepon</label>
-                                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Masukkan Nomor Anda">
+                                    <input type="number" class="form-control" id="exampleFormControlInput1" name="phone_number" placeholder="Masukkan Nomor Anda" required>
                                 </div>
                                 <div class="form-group">
-                                  <label for="exampleFormControlTextarea1">Pesan</label>
-                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <label for="exampleFormControlTextarea1">Pesan</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3" required></textarea>
                                 </div>
-                                <button class="btn tj-btn-primary">Kirim Pesan</button>
-                              </form>
+                                <button type="submit" class="btn tj-btn-primary">Kirim Pesan</button>
+                            </form>
                         </div>
                     </div>
     
